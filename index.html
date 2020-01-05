@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Things I've Learned</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+
+    <form>
+      <div>
+        <label for="firstName">First Name:</label>
+        <input name="firstName" id="firstName" type="text" required />
+        <label for="lastName">Last Name:</label>
+        <input name="lastName" id="lastName" type="text" required />
+      </div>
+      <div>
+        <label for="gender">Male</label>
+        <input name="gender" id="male" value="male" type="radio" />
+
+        <label for="gender">Female</label>
+        <input name="gender" id="female" value="female" type="radio" />
+
+        <label for="gender">Other</label>
+        <input name="gender" id="other" value="other" type="radio" />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input name="email" type="email" required />
+        <label for="password">Password:</label>
+        <input
+          name="password"
+          type="password"
+          pattern=".{5,10}"
+          required
+          title="5 to 10 characters"
+        />
+      </div>
+      <div>
+        <label for="birthday">Birthday:</label>
+        <select name="month">
+          <option>Month</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <select name="day">
+          <option>Day</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <select name="year">
+          <option>Year</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+        </select>
+      </div>
+      <div>
+        <label for="agree">I agree to the terms and conditions</label>
+        <input name="agree" id="agree" type="checkbox" />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
